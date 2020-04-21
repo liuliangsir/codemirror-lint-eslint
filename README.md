@@ -22,22 +22,22 @@ and include several scripts (see [index.html](https://github.com/liuliangsir/cod
 * Codemirror :
 
 ```html
-<link rel=stylesheet href="./assets/codemirror/doc/docs.css">
-<link rel="stylesheet" href="./assets/codemirror/lib/codemirror.css">
-<script src="./assets/codemirror/lib/codemirror.js"></script>
+<link rel=stylesheet href="./lib/codemirror/doc/docs.css">
+<link rel="stylesheet" href="./lib/codemirror/lib/codemirror.css">
+<script src="./lib/codemirror/lib/codemirror.js"></script>
 ```
 
 * JavaScript mode
 
 ```html
-<script src="./assets/codemirror/mode/javascript/javascript.js"></script>
+<script src="./lib/codemirror/mode/javascript/javascript.js"></script>
 ```
 
 * Lint interface
 
 ```html
-<link rel="stylesheet" href="./assets/codemirror/addon/lint/lint.css">
-<script src="./assets/codemirror/addon/lint/lint.js"></script>
+<link rel="stylesheet" href="./lib/codemirror/addon/lint/lint.css">
+<script src="./lib/codemirror/addon/lint/lint.js"></script>
 ```
 
 * Lint implementation with ESLint
@@ -53,4 +53,4 @@ The basic structure of the project is given in the following way:
 * `src/app.js` the entry point for whole application
 * `src/lint.js` the CodeMirror Lint addon which uses ESLint.
 * `index.html` the demo which uses ESLint with CodeMirror editor.
-* `assets` folder which contains CodeMirror.
+* `lib` folder which contains CodeMirror.
