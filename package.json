@@ -27,5 +27,8 @@
   },
   "alias": {
     "codemirror": "./lib/codemirror/lib/codemirror.js"
+  },
+  "dependencies": {
+    "lodash": "^4.17.15"
   }
 }
