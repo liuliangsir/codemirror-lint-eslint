@@ -10,8 +10,10 @@ function validator(text, options) {
   const result = []
   if (!text) return result
 
-  const wrappedText = `async () => {\n${text}\n}`
-  const config = defaultEslintConfig
+  const [
+    config = defaultEslintConfig,
+    wrappedText = `async () => {\n${text}\n}`,
+  ] = []
   const errors = linter.verify(wrappedText, {
     ...config,
   })
